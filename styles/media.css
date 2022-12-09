@@ -1,0 +1,126 @@
+@media (max-width: 950px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .show-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: unset;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        color: black    ;
+        width: 100vw;
+        height: 80px;
+        top: 0.1em;
+        left: -3em;
+        animation: slideLeft 0.6s linear;
+        gap: unset
+    }
+
+    .header-menu a:last-child {
+        padding-left: none;
+    }
+
+    
+    .header-menu a:last-child {
+        padding-right: none;
+    }
+
+@keyframes slideLeft {
+    0% {
+        width: 0vw;
+    }
+    50%, 100% {
+        width: 100vw; }   
+}
+
+    .header-logo {
+        align-self: center;
+    }
+
+    .header-menu a {
+        color: black;
+        font-size: var(--step--1);
+        font-weight: 600;
+    }
+
+    .header-menu a:after {
+        background-color: black;
+    }
+
+    .nav_toggle {
+        position: relative;
+        z-index: 2;
+        justify-items: flex-end;
+        cursor: pointer;
+        display: block;
+        color: var(--white);
+        font-size: var(--step--1);
+    }
+
+
+    main {
+        height: unset;
+        grid-template-rows: unset;
+    }
+    
+    .banner {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .banner > .img-banner {
+        width: 100%;
+        background-image: url('/images/mobile-image-hero-1.jpg');
+        flex-basis: 60%;
+    }
+
+    .banner > .slider-cta-content {
+        width: calc(100% - 4em);
+        flex-basis: 40%;
+        padding: 2em 0;
+        margin: 0 2em;
+    }
+    .slider-cta-content .slider-title {
+       width: unset;
+    }
+    
+
+    .arrow-key {
+        top: -5em;
+        left: unset;
+        width: 100px;
+        height: 60px;
+        right: -2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .dark-about, .middle-about-content, .light-about {
+        height: 350px;
+        flex-basis: unset;
+    }
+
+    .dark-about {
+        flex-basis: 30%;
+    }
+
+    .middle-about-content {
+        flex-basis: 40%;
+    }
+
+    .light-about {
+        flex-basis: 30%;
+    }
+}
